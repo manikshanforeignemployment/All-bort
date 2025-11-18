@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Report Management System</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 500px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            color: white;
+        }
+
+        .header h1 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        }
+
+        .header p {
+            font-size: 1rem;
+            opacity: 0.9;
+        }
+
+        .card-container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .report-card {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+            text-decoration: none;
+            color: inherit;
+            display: block;
+        }
+
+        .report-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+        }
+
+        .report-card:active {
+            transform: translateY(-2px);
+        }
+
+        .card-icon {
+            width: 60px;
+            height: 60px;
+            border-radius: 12px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+            font-size: 30px;
+        }
+
+        .departure-icon {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+
+        .arrival-icon {
+            background: linear-gradient(135deg, #56ab2f 0%, #a8e063 100%);
+        }
+
+        .card-title {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .card-description {
+            font-size: 0.95rem;
+            color: #666;
+            line-height: 1.5;
+        }
+
+        .arrow {
+            margin-top: 15px;
+            font-size: 1.2rem;
+            color: #1e3c72;
+            font-weight: bold;
+        }
+
+        @media (max-width: 480px) {
+            .header h1 {
+                font-size: 1.5rem;
+            }
+
+            .header p {
+                font-size: 0.9rem;
+            }
+
+            .report-card {
+                padding: 25px;
+            }
+
+            .card-title {
+                font-size: 1.3rem;
+            }
+
+            .card-icon {
+                width: 50px;
+                height: 50px;
+                font-size: 25px;
+            }
+        }
+
+        @media (min-width: 768px) {
+            .card-container {
+                flex-direction: row;
+            }
+
+            .report-card {
+                flex: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Report Management System</h1>
+            <p>Select a report type to continue</p>
+        </div>
+
+        <div class="card-container">
+            <a href="https://manikshanforeignemployment.github.io/syatembort/" class="report-card">
+                <div class="card-icon departure-icon">🚢</div>
+                <div class="card-title">Departure Report</div>
+                <div class="card-description">Access departure records and management system</div>
+                <div class="arrow">→</div>
+            </a>
+
+            <a href="https://manikshanforeignemployment.github.io/Arrival-Report-System/" class="report-card">
+                <div class="card-icon arrival-icon">⚓</div>
+                <div class="card-title">Arrival Report</div>
+                <div class="card-description">Access arrival records and management system</div>
+                <div class="arrow">→</div>
+            </a>
+        </div>
+    </div>
+</body>
+</html>
